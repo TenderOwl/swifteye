@@ -7,16 +7,16 @@ Your data is only yours.
 
 ## Features
 
-- [x] Extract text from local images using ondevice decoding
-- [x] Copy to clipboard
-- [ ] Extract text from Camera
-- [ ] Read QR & Barcode codes
-- [ ] History
+- ✔️ Extract text from local images using ondevice decoding
+- ✔️ Copy to clipboard
+- ⏳ Extract text from Camera
+- ⏳ Read QR & Barcode codes
+- ⏳ History
 
 ## Supported platforms
 
-- [x] macOS
-- [ ] Linux
-- [ ] Windows
-- [ ] Android
-- [ ] iOS
+- ✔️ macOS
+- ⏳ Linux
+- ⏳ Windows
+- ⏳ Android
+- ⏳ iOS
