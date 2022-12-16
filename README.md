@@ -1,16 +1,22 @@
 # SwiftEye
 
-Text extraction tool for desktop
+Text extraction tool for desktop. **On-device** decoding, nothing send to the cloud.
+Your data is only yours.
 
-## Getting Started
+![Screenshot](https://github.com/TenderOwl/swifteye/blob/main/docs/screenshot-macos.png?raw=true)
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- [x] Extract text from local images using ondevice decoding
+- [x] Copy to clipboard
+- [ ] Extract text from Camera
+- [ ] Read QR & Barcode codes
+- [ ] History
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Supported platforms
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [x] macOS
+- [ ] Linux
+- [ ] Windows
+- [ ] Android
+- [ ] iOS
