@@ -1,6 +1,6 @@
-# swifteye
+# SwiftEye
 
-A new Flutter project.
+Text extraction tool for desktop
 
 ## Getting Started
 
