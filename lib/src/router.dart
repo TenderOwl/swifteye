@@ -6,14 +6,17 @@ import 'package:swifteye/src/pages/preferences_page.dart';
 final router = GoRouter(routes: [
   GoRoute(
     path: '/',
+    name: 'home',
     builder: (context, state) => const HomePage(title: 'Swifteye'),
   ),
   GoRoute(
-    path: '/extracted',
-    builder: (context, state) => const ExtractedPage(),
+    path: '/extract',
+    name: 'extract',
+    builder: (context, state) => ExtractedPage(path: state.queryParams['path']),
   ),
   GoRoute(
     path: '/preferences',
+    name: 'preferences',
     builder: (context, state) => const PreferencesPage(),
   ),
 ]);

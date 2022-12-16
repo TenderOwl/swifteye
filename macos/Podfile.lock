@@ -6,12 +6,15 @@ PODS:
     - FlutterMacOS
   - screen_capturer (0.1.0):
     - FlutterMacOS
+  - tenderowl_ocr (0.0.1):
+    - FlutterMacOS
 
 DEPENDENCIES:
   - desktop_drop (from `Flutter/ephemeral/.symlinks/plugins/desktop_drop/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
   - path_provider_macos (from `Flutter/ephemeral/.symlinks/plugins/path_provider_macos/macos`)
   - screen_capturer (from `Flutter/ephemeral/.symlinks/plugins/screen_capturer/macos`)
+  - tenderowl_ocr (from `Flutter/ephemeral/.symlinks/plugins/tenderowl_ocr/macos`)
 
 EXTERNAL SOURCES:
   desktop_drop:
@@ -22,13 +25,16 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral/.symlinks/plugins/path_provider_macos/macos
   screen_capturer:
     :path: Flutter/ephemeral/.symlinks/plugins/screen_capturer/macos
+  tenderowl_ocr:
+    :path: Flutter/ephemeral/.symlinks/plugins/tenderowl_ocr/macos
 
 SPEC CHECKSUMS:
   desktop_drop: 69eeff437544aa619c8db7f4481b3a65f7696898
   FlutterMacOS: ae6af50a8ea7d6103d888583d46bd8328a7e9811
   path_provider_macos: 3c0c3b4b0d4a76d2bf989a913c2de869c5641a19
   screen_capturer: 696de78ce7beff63eecf8aa709f839985a7836d7
+  tenderowl_ocr: 192a6aa3095088ed28ee784126ca7fc909371777
 
-PODFILE CHECKSUM: 6eac6b3292e5142cfc23bdeb71848a40ec51c14c
+PODFILE CHECKSUM: 0d3963a09fc94f580682bd88480486da345dc3f0
 
 COCOAPODS: 1.11.3

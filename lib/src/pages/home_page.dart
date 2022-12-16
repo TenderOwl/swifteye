@@ -29,9 +29,17 @@ class _HomePageState extends State<HomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        centerTitle: true,
         backgroundColor: Colors.transparent,
         foregroundColor: Theme.of(context).colorScheme.onSurface,
         shadowColor: Colors.transparent,
+        leading: context.canPop()
+            ? IconButton(
+                onPressed: () => context.pop(),
+                icon: LineIcon.arrowLeft(),
+                splashRadius: 24,
+              )
+            : const SizedBox.shrink(),
         actions: [
           files.isNotEmpty
               ? IconButton(
@@ -45,6 +53,7 @@ class _HomePageState extends State<HomePage> {
             icon: LineIcon.cog(),
             splashRadius: 24,
           ),
+          const SizedBox(width: 8),
         ],
       ),
       extendBodyBehindAppBar: true,
@@ -57,8 +66,7 @@ class _HomePageState extends State<HomePage> {
         }),
         onDragDone: (details) {
           setState(() {
-            files.clear();
-            files.add(details.files.single);
+            files.addAll(details.files);
             dragging = false;
           });
         },
@@ -86,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                     itemBuilder: (context, index) {
                       return ListTile(
                         title: Text(files[index].name),
-                        onTap: () => context.push('/extracted'),
+                        onTap: () async => await extractText(files[index].path),
                       );
                     },
                   ),
@@ -113,5 +121,9 @@ class _HomePageState extends State<HomePage> {
         files.addAll(filesToImport);
       });
     }
+  }
+
+  Future extractText(String? path) async {
+    context.pushNamed("extract", queryParams: {'path': path});
   }
 }
